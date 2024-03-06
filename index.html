@@ -7,6 +7,9 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/simplebar/dist/simplebar.min.css">
+    <script src="https://unpkg.com/simplebar/dist/simplebar.min.js"></script>
+
   </head>
   <body>
     <nav id="desktop-nav">
@@ -96,12 +99,15 @@
               <p>B.Tech<br />Electronics and Telecommunication</p>
               <br>
               <div class="btn-container">
-                <button
+                <a class="a-btn" href="#projects">
+                  <button
                   class="btn btn-color-2"
-                  onclick="window.open('./assets/FY1_merged.pdf')"
-                >
-                  Score Card
-                </button>
+                  >
+                  <!-- onclick="window.open('./assets/FY1_merged.pdf')" -->
+                  Projects
+                  </button>
+                </a>
+                
               </div>
             </div>
             <div class="details-container">
@@ -275,12 +281,14 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
+
+      <div class="project-grid">
+        <div class="project-grid-child">
+          <div class="details-container color-container ">
             <div class="article-container">
               <img
                 src="./assets/resize2.png"
@@ -332,6 +340,96 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
+                src="./assets/logo2.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Crav-Cart</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://cravecart.netlify.app/'"
+              >
+                webSite🔗
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://cravecart.netlify.app/'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/weather_app2.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">skyglam</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://skyglam.netlify.app/'"
+              >
+                webSite🔗
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Chetan51423/Wt_course_project_weatherAPP'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/images (1).png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Snake-Blaze</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://python-mania.netlify.app/'"
+              >
+                webSite🔗
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Chetan51423/Snake-Blaze'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
                 src="./assets/project-2.png"
                 alt="Project 3"
                 class="project-img"
@@ -353,8 +451,9 @@
               </button> -->
             </div>
           </div>
+          
+          
         </div>
-        
       </div>    
       <img
         src="./assets/arrow.png"
